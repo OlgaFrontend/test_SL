@@ -1,0 +1,388 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Merriweather', serif; }
+
+h2 {
+  font-family: 'Merriweather',serif;
+  font-size: 37px;
+  font-weight: bold; }
+
+section {
+  background-color: #fff; }
+
+a {
+  cursor: pointer; }
+
+/*_______header_______*/
+/*_______navigation______*/
+.header {
+  background-image: url("../img/bg.png");
+  background-position-x: center; }
+
+.nav-top {
+  margin-bottom: 30px;
+  padding-top: 36px; }
+
+.nav-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-top: 12px; }
+  .nav-menu__item {
+    margin-right: 45px; }
+    .nav-menu__item:last-child {
+      margin-right: 0; }
+  .nav-menu__link {
+    color: #020202;
+    display: inline-block;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px; }
+    .nav-menu__link:hover {
+      text-decoration: none; }
+
+.nav-list {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 57px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .nav-list__link {
+    display: inline-block;
+    padding: 10px; }
+
+/*_________offer_______*/
+.slash {
+  color: #9597a2;
+  font-weight: bold; }
+
+.offer {
+  padding-bottom: 43px; }
+
+.about {
+  font-family: 'Merriweather',serif;
+  padding-left: 76px; }
+  .about__title {
+    letter-spacing: 2px;
+    line-height: 42px;
+    margin-bottom: 46px;
+    padding-top: 81px; }
+  .about__author {
+    font-size: 16px;
+    line-height: 23px;
+    text-decoration: underline; }
+  .about__text {
+    margin-bottom: 56px;
+    font-size: 15px;
+    line-height: 25px;
+    padding-right: 90px; }
+  .about__link {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; }
+  .about__arrow {
+    margin-left: 11px; }
+
+.offer-right__img {
+  display: block;
+  padding-top: 33px;
+  padding-left: 113px; }
+
+/*_______section author-info________*/
+.author-info {
+  margin-bottom: 70px;
+  padding-top: 97px; }
+
+.letter {
+  padding-top: 33px;
+  padding-left: 26px; }
+
+.author__title {
+  letter-spacing: 2.2px;
+  margin-bottom: 26px;
+  padding-bottom: 31px;
+  position: relative; }
+  .author__title:after {
+    content: "";
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 22%;
+    background-color: #faf076; }
+
+.author__text {
+  padding-right: 60px;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 1px; }
+
+/*_________section about-book_________*/
+.about-book {
+  padding-top: 77px; }
+
+.book {
+  padding-left: 74px; }
+  .book__title {
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    padding-bottom: 26px;
+    position: relative; }
+    .book__title:after {
+      content: "";
+      clear: both;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      width: 25%;
+      background-color: #faf076; }
+  .book__text {
+    line-height: 25px;
+    margin-bottom: 20px;
+    font-size: 14px; }
+
+/*________Slider________*/
+.carousels {
+  min-width: 631px;
+  position: relative; }
+  .carousels__content {
+    width: 631px;
+    height: 578px;
+    overflow: hidden;
+    position: relative; }
+  .carousels__inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 0;
+    -webkit-transition: left 0.25s ease-out;
+    -o-transition: left 0.25s ease-out;
+    transition: left 0.25s ease-out; }
+  .carousels__bubbles {
+    bottom: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-bottom: 5px;
+    height: 30px; }
+  .carousels__bubble {
+    margin: 5px;
+    background-color: #9597a2;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    opacity: 1;
+    -webkit-transition: opacity 0.1s linear;
+    -o-transition: opacity 0.1s linear;
+    transition: opacity 0.1s linear;
+    cursor: pointer; }
+  .carousels__bubble.active {
+    background-color: #faf076; }
+  .carousels__prev {
+    background-color: transparent;
+    border: none;
+    bottom: 48%;
+    display: inline-block;
+    height: 150px;
+    position: absolute;
+    width: 100px; }
+    .carousels__prev:focus {
+      outline: 5px auto transparent; }
+  .carousels__next {
+    background-color: transparent;
+    border: none;
+    bottom: 48%;
+    display: inline-block;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    width: 100px; }
+    .carousels__next:focus {
+      outline: 5px auto transparent; }
+
+@media all and (max-width: 1280px) {
+  .carousels {
+    min-width: 0;
+    max-width: 450px;
+    margin: 0 auto; }
+    .carousels__prev {
+      height: 100px;
+      left: 0;
+      width: 70px; }
+    .carousels__next {
+      height: 100px;
+      right: 0;
+      width: 70px; }
+  .carousels__content {
+    margin: 0 auto;
+    height: 450px;
+    width: 450px; }
+  .carousels__img {
+    width: 450px;
+    height: 450px; } }
+
+@media all and (max-width: 1200px) {
+  h2 {
+    font-size: 30px; }
+  .nav-menu__item {
+    margin-right: 35px; }
+  .about {
+    padding-left: 25px; }
+  .offer-right__img {
+    padding-left: 40px; }
+  .letter__img {
+    width: 97%; }
+  .author-info {
+    padding-top: 60px; }
+  .about-book {
+    padding-top: 0; } }
+
+@media all and (max-width: 1025px) {
+  .offer-right__img {
+    width: 90%;
+    padding-top: 85px; }
+  .letter__img {
+    padding-top: 42px;
+    width: 97%; }
+  .about {
+    padding-left: 0; }
+    .about__text {
+      padding-right: 0; }
+  .author__text {
+    padding-right: 0; }
+  .book {
+    padding-left: 0; }
+  .author__text,
+  .book__text {
+    line-height: 20px; }
+  .carousels {
+    min-width: 0;
+    max-width: 300px;
+    margin: 0 auto; }
+    .carousels__prev {
+      height: 100px;
+      left: 0;
+      width: 70px; }
+    .carousels__next {
+      height: 100px;
+      right: 0;
+      width: 70px; }
+  .carousels__content {
+    margin: 0 auto;
+    height: 300px;
+    width: 300px; }
+  .carousels__img {
+    width: 300px;
+    height: 280px; } }
+
+@media all and (max-width: 769px) {
+  h2 {
+    font-size: 30px; }
+  .nav-menu {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .nav-menu__item {
+    margin-right: 20px; }
+  .nav-list {
+    margin-right: 0; }
+  .about {
+    padding-left: 0; }
+    .about__title {
+      padding: 0; }
+    .about__text {
+      padding-right: 0; }
+  .offer-right__img {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 0;
+    width: 80%; }
+  .author-info {
+    margin-bottom: 30px;
+    padding-top: 0; }
+  .author__text {
+    padding-right: 0; }
+  .letter__img {
+    margin-bottom: 30px; }
+  .book {
+    padding-left: 0; } }
